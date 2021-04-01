@@ -4,6 +4,7 @@ from pycocotools.coco import COCO
 import shutil
 
 ####################################################################################################
+# change the paths to reflect your source 
 source_root = "/dockerx/coco2017"
 datadir = os.path.join(source_root, 'annotations')
 json_file = "bbox_only_instances_train2017.json"
@@ -17,7 +18,8 @@ new_imgs_name = "train2017"
 new_imgs_name_val = "val2017" 
 
 regenerate = True 
-#regenerate = False 
+#regenerate = False
+#num of images in the smaller dataset
 num = 2048 
 num_val = 2048 
 images_list = [391895, 522418, 184613, 318219, 554625, 574769, 60623, 309022, 5802, 222564, 118113, 193271, 224736, 483108, 403013, 374628]
